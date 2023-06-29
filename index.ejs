@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <%if(popup!=""){%>
+    <div id="pop">
+    <p ><%=popup%></p>
+    <form action="/"><input type="submit" value="X" class="x"></form>
+    </div>
+    <%}%>
+    <form action="submit" method="POST">
+      <div class="box">
+        <img src="4619111.jpg" alt="img" width="280px" height="380px" />
+        <div class="form">
+          <a class="tit">Login</a>
+          <input
+            type="email"
+            name="mail"
+            class="cool int1"
+            placeholder="@email"
+          />
+          <input
+            type="password"
+            name="pass"
+            class="cool int2"
+            placeholder="#password"
+          />
+          <input type="submit" class="cool sub" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
